@@ -1,0 +1,27 @@
+<?php
+  ob_start();
+  session_start();
+  include 'conn.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<?php include 'head.php';?>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <?php include 'nav.php';?>
+    <div class="wrapper">
+      <div class="container">
+    <!--INSERT CODE HERE-->
+
+        <div id = "maincontent">
+            
+        </div>
+        <!-- main content -->
+
+    <!--INSERT CODE HERE ^^^^-->
+        <?php include 'rightsidebar.php';?>
+      </div>
+    </div>
+    <?php include 'javascript.php';?>
+</body>
+</html>

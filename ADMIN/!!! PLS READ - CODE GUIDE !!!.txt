@@ -1,0 +1,87 @@
+**Add your modules in SIDEBAR.php**
+**Material icons are in ICONS.html**
+
+========================================== \\ CODE TEMPLATE // ==================================================
+COPY AND PASTE THIS CODE BEFORE YOU DO YOUR OWN CODE. PUT YOUR CODE INSIDE THE "INSERT CODE HERE" COMMENT. :)
+===========================================================================================================
+
+<?php
+    session_start();
+    ob_start();
+
+    $username = $_SESSION['name'];
+?> 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <?php include 'head.php'; ?>
+</head>
+
+<body>
+    <div class="wrapper" style="background: url('Dark_background_1920x1080.png') 
+    center top no-repeat; background-size: cover;">
+        <?php include 'sidebar.php'; ?>
+        <div class="main-panel">
+            <?php include 'nav.php'; ?>
+            <div class="content">
+                <div class="container-fluid">
+                    <ol class='breadcrumb'>
+                        <li>
+                            <i class='fa fa-dashboard'></i> Dashboard
+                        </li>
+                        <li class='active'>
+                            <i class='fa fa-dashboard'></i> News & Events
+                        </li>
+                    </ol>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #242424;">
+                                  <h2 class="title">NEWS AND EVENTS</h2>
+                        </div>
+                        <div class="card-content">
+            <!-- INSERT CODE HERE -->
+
+
+
+
+            <!--^ INSERT CODE HERE ^-->  
+
+                        </div><!--/card-content-->
+                    </div><!--./card-->
+                </div><!--./container-fluid-->
+            </div><!--./content-->
+        </div><!--./main-panel-->
+    </div><!--./wrappper-->
+</body>
+<?php include 'javascript.php';?>
+
+</html>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        columnDefs: [
+            {
+                targets: [ 0, 1, 2 ],
+                className: 'mdl-data-table__cell--non-numeric'
+            }
+        ]
+    } );
+} );
+</script>
+
+ 	<!--TABLE CODE -->
+	<table id="example" class="mdl-data-table" cellspacing="0" width="100%">
+                              <thead>
+                                  <tr>
+                                      <th>Name</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td></td>
+                                  </tr>
+                              </tbody>
+                            </table>
+
+     <!--^ TABLE CODE ^-->  

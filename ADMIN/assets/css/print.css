@@ -1,0 +1,15 @@
+.hide-from-printer{  display:none; }
+
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+
+

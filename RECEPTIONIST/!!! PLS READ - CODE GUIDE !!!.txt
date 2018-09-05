@@ -1,0 +1,109 @@
+**Add your modules in SIDEBAR.php**
+**Material icons are in ICONS.html**
+
+========================================== \\ CODE TEMPLATE // ==================================================
+COPY AND PASTE THIS CODE BEFORE YOU DO YOUR OWN CODE. PUT YOUR CODE INSIDE THE "INSERT CODE HERE" COMMENT. :)
+===========================================================================================================
+
+<?php
+    session_start();
+    ob_start();
+    include 'conn.php';
+
+    $username = $_SESSION['username'];
+?> 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <?php include 'head.php'; ?>
+</head>
+
+<body>
+    <div class="wrapper" style="background: url('Dark_background_1920x1080.png') 
+    center top no-repeat; background-size: cover;">
+        <?php include 'sidebar.php'; ?>
+        <div class="main-panel">
+            <?php include 'nav.php'; ?>
+            <div class="content">
+                <div class="container-fluid">
+                    <ol class='breadcrumb'>
+                        <li>
+                            <i class='fa fa-dashboard'></i> Dashboard
+                        </li>
+                        <li class='active'>
+                            <i class='fa fa-dashboard'></i> News & Events
+                        </li>
+                    </ol>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #242424;">
+                                  <h2 class="title">NEWS AND EVENTS</h2>
+                        </div>
+                        <div class="card-content">
+            <!-- INSERT CODE HERE -->
+
+
+
+
+            <!--^ INSERT CODE HERE ^-->  
+                        </div><!--/card-content-->
+                    </div><!--./card-->
+                </div><!--./container-fluid-->
+            </div><!--./content-->
+        </div><!--./main-panel-->
+    </div><!--./wrappper-->
+</body>
+<?php include 'javascript.php';?>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+Log In
+Settings
+  -Classes
+  -Facilities
+  -Instructors
+  -Membership Types
+  -Users
+  -News and Events
+Members
+  -Sign up, Enroll with Memberhip
+  -Upgrade/Downgrade Membership
+  -Active, Inactive, Unofficial
+Transactions
+  -Add and view payment
+  -Proof of payment
+  -Payment history
+Activity Log of Customers
+  -Attendance
+  -Number of hours consumed
+Fitness Tracker
+  -Profiling
+  -Food Diary
+  -etc
+
+Sign up, Enroll with Membership
+Log In
+Profile
+Upgrade/Downgrade Membership
+Transactions
+  -Add and view payment
+  -Proof of payment
+  -Payment history
+Activity Log of Self
+  -Attendance
+  -Number of hours consumed
+Fitness Tracker
+  -Profiling
+  -Food Diary
+  -etc
+News and Events
